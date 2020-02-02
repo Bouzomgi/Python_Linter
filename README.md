@@ -69,7 +69,7 @@ short scripts.
 
 
 I have included 7 traces: hello1.py to hello7.py, all demonstrating a unique feature of this linter. To run, change the 
-variable "currFile" to the name of the file you want to run, and then run the code through terminal. Enjoy!
+variable "currFile" to the name of the file you want to run, and then run the code through your command shell. Enjoy!
 
 
 ####################################################################################################################

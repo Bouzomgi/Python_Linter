@@ -49,7 +49,7 @@ would be 1). It will then run though the loop (i += 1, so i = 2). It will then s
 newValue (newValue = 2). Because newValue > oldValue, and the while loops condition will only be broken by decrementation, 
 we deem this loop as infinite
 
-***Due to how the code is implemented, there is actually 2 runs through the loop. It still works the way we want it too***
+***Due to how the code is implemented, there is actually 2 runs through the loop. It still works the way we want it to***
 
 The script is intelligent. It will look at the conditions of "if" statements to judge if it actually should enter them 
 or not. Hello6.py demonstrates this well (in that example, the code knows not to enter the if statement, allowing it to 

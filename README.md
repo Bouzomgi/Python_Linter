@@ -44,14 +44,14 @@ i = 1
 while i > 0:
 	i += 1
 
-The program will know i is the conditional variable and store it's value as oldValue (in this example, oldValue
+The program will know i is the conditional variable and store its value as oldValue (in this example, oldValue
 would be 1). It will then run though the loop (i += 1, so i = 2). It will then store the conditional variable as
 newValue (newValue = 2). Because newValue > oldValue, and the while loops condition will only be broken by decrementation, 
 we deem this loop as infinite
 
 ***Due to how the code is implemented, there is actually 2 runs through the loop. It still works the way we want it to***
 
-The script is intelligent. It will look at the conditions of "if" statements to judge if it actually should enter them 
+The script is somewhat intelligent. It will look at the conditions of "if" statements to judge if it actually should enter them 
 or not. Hello6.py demonstrates this well (in that example, the code knows not to enter the if statement, allowing it to 
 enter the infinite while loop like it should).
 
@@ -59,14 +59,13 @@ Implementation:
 	
 The script uses a stack to store each line to revisit old control statements easily and to compare each lines indentation to the previous's. 
 
-There is also a queue implemented by way of two stacks. Infomation from my main stack is dumped into an inner stack, "conditionalStack", 
-to form a queue I pull from in my infinite while loop check.
+There is also a queue implemented by way of two stacks. Infomation from my main stack is dumped into an inner stack, "conditionalStack", to form a queue I pull from in my infinite while loop check.
 
 Limitations:
 
 The infinite while loop section is only guarenteed to work with addition, subtraction, and multiplication/division of
 same sign constants. I have not extensively bugtested for long selections of code. This script serves as a POC for 
-small scripts. 
+short scripts. 
 
 
 I have included 7 traces: hello1.py to hello7.py, all demonstrating a unique feature of this linter. To run, change the 
